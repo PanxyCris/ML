@@ -30,6 +30,7 @@ class KMeans:
                 minIndex = i
         return minIndex
 
+    # calculate new mean vector value
     def getNewVectorValue(self, vector):
         attributes = vector[0].index.values[1:]
         u = pd.Series(index=self.D.columns.values)
